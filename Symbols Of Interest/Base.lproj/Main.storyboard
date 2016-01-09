@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="cR7-0w-JsB">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Symbols Of Interest-->
+        <scene sceneID="BW4-c4-dob">
+            <objects>
+                <viewController id="bfd-Mq-GLN" customClass="ButtonHandlerClass" customModule="Symbols_Of_Interest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="W5c-wT-JVc"/>
+                        <viewControllerLayoutGuide type="bottom" id="6xW-ta-8cF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FQ7-fZ-IJf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="persec" translatesAutoresizingMaskIntoConstraints="NO" id="cpE-lL-tNo">
+                                <rect key="frame" x="0.0" y="61" width="320" height="507"/>
+                                <animations/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5w-3H-5Bz">
+                                <rect key="frame" x="56" y="316" width="209" height="60"/>
+                                <animations/>
+                                <state key="normal" image="poi_norm">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="uRJ-1d-0Fm" kind="push" id="yd0-12-TQy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YyQ-Or-3S4">
+                                <rect key="frame" x="56" y="238" width="209" height="60"/>
+                                <animations/>
+                                <state key="normal" image="ch_norm">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="push" id="dwN-zl-tb5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HNZ-Gr-mgd">
+                                <rect key="frame" x="56" y="395" width="209" height="60"/>
+                                <animations/>
+                                <state key="normal" image="abt_norm">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Z2E-KQ-Oeg" kind="push" id="h1k-QP-2Qf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cpE-lL-tNo" firstAttribute="leading" secondItem="FQ7-fZ-IJf" secondAttribute="leadingMargin" constant="-16" id="Cci-gL-euu"/>
+                            <constraint firstItem="u5w-3H-5Bz" firstAttribute="top" secondItem="W5c-wT-JVc" secondAttribute="bottom" constant="252" id="DwV-cw-RTb"/>
+                            <constraint firstItem="HNZ-Gr-mgd" firstAttribute="top" secondItem="W5c-wT-JVc" secondAttribute="bottom" constant="331" id="QmR-fR-l98"/>
+                            <constraint firstItem="cpE-lL-tNo" firstAttribute="top" secondItem="W5c-wT-JVc" secondAttribute="bottom" constant="-3" id="VR5-AW-Fli"/>
+                            <constraint firstItem="YyQ-Or-3S4" firstAttribute="top" secondItem="W5c-wT-JVc" secondAttribute="bottom" constant="174" id="Wgb-bV-rKj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="u5w-3H-5Bz" secondAttribute="trailing" constant="39" id="X2m-hc-l4F"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HNZ-Gr-mgd" secondAttribute="trailing" constant="39" id="Xcu-CG-7ot"/>
+                            <constraint firstItem="6xW-ta-8cF" firstAttribute="top" secondItem="cpE-lL-tNo" secondAttribute="bottom" id="aFy-Qf-1Pd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cpE-lL-tNo" secondAttribute="trailing" constant="-16" id="sYQ-w2-rA0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YyQ-Or-3S4" secondAttribute="trailing" constant="39" id="wxW-ZE-vwj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Symbols Of Interest" id="FL4-dK-yxY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2wG-yU-NYy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="668" y="269"/>
+        </scene>
+        <!--Symbols Of Interest-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Symbols_Of_Interest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="phj-mR-oQy"/>
+                        <viewControllerLayoutGuide type="bottom" id="y4i-H4-0g4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="perthird" translatesAutoresizingMaskIntoConstraints="NO" id="0mI-8b-fO1">
+                                <rect key="frame" x="0.0" y="60" width="320" height="518"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5XE-X5-f3u">
+                                <rect key="frame" x="5" y="125" width="309" height="274"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOX-Cj-NBC">
+                                <rect key="frame" x="0.0" y="414" width="320" height="60"/>
+                                <animations/>
+                                <state key="normal" image="brw_norm">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="chooseMedium:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="WLA-if-gqI"/>
+                                </connections>
+                            </button>
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pic9" translatesAutoresizingMaskIntoConstraints="NO" id="nyJ-27-PUw">
+                                <rect key="frame" x="7" y="125" width="304" height="276"/>
+                                <animations/>
+                                <accessibility key="accessibilityConfiguration" hint="" label=""/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="sZA-AL-11G" appends="YES" id="alb-8y-aWs"/>
+                                    <outletCollection property="gestureRecognizers" destination="2Zg-hu-uF2" appends="YES" id="nxW-dj-nzi"/>
+                                    <outletCollection property="gestureRecognizers" destination="hk0-ZR-FUE" appends="YES" id="lxq-xY-MPh"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6U-ac-RPm">
+                                <rect key="frame" x="0.0" y="488" width="320" height="60"/>
+                                <animations/>
+                                <state key="normal" image="sav_norm">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveImage:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hV2-k7-8Qf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="hOX-Cj-NBC" secondAttribute="trailing" constant="-16" id="Df7-gf-yxA"/>
+                            <constraint firstItem="hOX-Cj-NBC" firstAttribute="top" secondItem="phj-mR-oQy" secondAttribute="bottom" constant="350" id="Ohy-DH-xoD"/>
+                            <constraint firstAttribute="centerX" secondItem="hOX-Cj-NBC" secondAttribute="centerX" id="Xpb-6K-PN6"/>
+                            <constraint firstItem="h6U-ac-RPm" firstAttribute="top" secondItem="phj-mR-oQy" secondAttribute="bottom" constant="424" id="gs2-lT-aXA"/>
+                            <constraint firstAttribute="centerX" secondItem="h6U-ac-RPm" secondAttribute="centerX" id="h0U-LV-CJV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="h6U-ac-RPm" secondAttribute="trailing" constant="-16" id="ios-Ux-cGf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Symbols Of Interest" id="Zuf-3e-jOf"/>
+                    <connections>
+                        <outlet property="browseImage" destination="5XE-X5-f3u" id="Cpb-Id-5zN"/>
+                        <outlet property="frameView" destination="nyJ-27-PUw" id="js0-mv-LeC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="sZA-AL-11G">
+                    <connections>
+                        <action selector="handleSwipe:" destination="vXZ-lx-hvc" id="MI4-8E-WXQ"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="2Zg-hu-uF2">
+                    <connections>
+                        <action selector="handleSwipe:" destination="vXZ-lx-hvc" id="P2T-2S-sH0"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <pinchGestureRecognizer id="hk0-ZR-FUE">
+                    <connections>
+                        <action selector="handlePinch:" destination="vXZ-lx-hvc" id="Rrc-XI-uNq"/>
+                    </connections>
+                </pinchGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1104" y="286"/>
+        </scene>
+        <!--Symbols Of Interest-->
+        <scene sceneID="R6r-oY-OgN">
+            <objects>
+                <viewController id="8Of-VJ-UR2" customClass="ButtonHandlerClass" customModule="Symbols_Of_Interest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fhC-8u-cDq"/>
+                        <viewControllerLayoutGuide type="bottom" id="fGC-kc-RKO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YPX-KO-F0X">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Cx-aY-cCf">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Symbols Of Interest" id="BOU-bP-eBk"/>
+                    <connections>
+                        <outlet property="openLinks" destination="3Cx-aY-cCf" id="TiH-9V-i24"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OH2-eE-O17" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1503" y="265"/>
+        </scene>
+        <!--Symbols Of Interest-->
+        <scene sceneID="wYs-qC-lFR">
+            <objects>
+                <viewController id="Z2E-KQ-Oeg" customClass="ButtonHandlerClass" customModule="Symbols_Of_Interest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tNy-zQ-bII"/>
+                        <viewControllerLayoutGuide type="bottom" id="J6e-Za-GGU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TmT-nm-5AO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHJ-eH-3BN">
+                                <rect key="frame" x="16" y="329" width="64" height="64"/>
+                                <animations/>
+                                <state key="normal" image="twitter" backgroundImage="twitteruc">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="myTwitter:" destination="Z2E-KQ-Oeg" eventType="touchUpInside" id="s02-9c-2KX"/>
+                                    <segue destination="8Of-VJ-UR2" kind="push" id="hYP-rL-4YU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mcS-Dr-hWy">
+                                <rect key="frame" x="126" y="329" width="64" height="64"/>
+                                <animations/>
+                                <state key="normal" image="tumblr" backgroundImage="tumblruc">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="myTumblr:" destination="Z2E-KQ-Oeg" eventType="touchUpInside" id="3da-aQ-yYW"/>
+                                    <segue destination="8Of-VJ-UR2" kind="push" id="6L4-iC-H7L"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fyk-tr-fdF">
+                                <rect key="frame" x="230" y="329" width="64" height="64"/>
+                                <animations/>
+                                <state key="normal" image="googleplus" backgroundImage="googlepuc">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="myGooglePlus:" destination="Z2E-KQ-Oeg" eventType="touchUpInside" id="1oi-dj-I1k"/>
+                                    <segue destination="8Of-VJ-UR2" kind="push" id="FfC-ld-JsT"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vqw-P3-5eC">
+                                <rect key="frame" x="16" y="84" width="288" height="237"/>
+                                <animations/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <string key="text">Hi!
+I am a student, and Person of Interest is my favourite show. This is my first app. I hope you’re going to like it.
+This app is not officially associated with Person Of Interest.
+Follow me and give me feedbacks about the app on the following accounts.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Symbols Of Interest" id="cAL-EJ-cFk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mhU-ua-TQk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1088" y="991"/>
+        </scene>
+        <!--Symbols Of Interest-->
+        <scene sceneID="81O-Em-ag5">
+            <objects>
+                <viewController id="uRJ-1d-0Fm" customClass="ButtonHandlerClass" customModule="Symbols_Of_Interest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hzK-AD-jr6"/>
+                        <viewControllerLayoutGuide type="bottom" id="kw0-TI-z90"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="f51-Qa-tqq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="perthird" translatesAutoresizingMaskIntoConstraints="NO" id="gSW-7E-ReV">
+                                <rect key="frame" x="-2" y="64" width="325" height="504"/>
+                                <animations/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vbt-JL-6ai">
+                                <rect key="frame" x="11" y="70" width="293" height="234"/>
+                                <animations/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <string key="text">Person of Interest is a crime thriller series,
+created by Jonathan Nolan and broadcasting on CBS. 
+It all starts when reclusive billionaire Harold Finch (Michael Emerson) recruits former CIA special forces agent John Reese (Jim Caviezel) to investigate social security numbers of people who are about to be involved in violent crimes, either victims or perpetrators.
+Read About:</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Lcs-On-Llg">
+                                <rect key="frame" x="0.0" y="296" width="230" height="28"/>
+                                <animations/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="The Machine &amp; It's Symbols">
+                                            <attributes>
+                                                <font key="NSFont" size="15" name="HelveticaNeue-Bold"/>
+                                                <integer key="NSUnderline" value="1"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="deusExMachina:" destination="uRJ-1d-0Fm" eventType="touchUpInside" id="nkO-Ov-rBT"/>
+                                    <segue destination="8Of-VJ-UR2" kind="push" id="NdM-9x-7AN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Symbols Of Interest" id="6kL-py-7HM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BO6-8X-AEY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1104" y="-368"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yUg-9F-UPL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cR7-0w-JsB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Lqc-jc-bcK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bfd-Mq-GLN" kind="relationship" relationship="rootViewController" id="d4v-Ok-zd1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vxb-Tt-wM0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136" y="269"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="abt_norm" width="209" height="60"/>
+        <image name="brw_norm" width="160" height="60"/>
+        <image name="ch_norm" width="209" height="60"/>
+        <image name="googleplus" width="64" height="64"/>
+        <image name="googlepuc" width="64" height="64"/>
+        <image name="persec" width="540" height="780"/>
+        <image name="perthird" width="540" height="780"/>
+        <image name="pic9" width="480" height="480"/>
+        <image name="poi_norm" width="209" height="60"/>
+        <image name="sav_norm" width="110" height="60"/>
+        <image name="tumblr" width="64" height="64"/>
+        <image name="tumblruc" width="64" height="64"/>
+        <image name="twitter" width="64" height="64"/>
+        <image name="twitteruc" width="64" height="64"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="hYP-rL-4YU"/>
+    </inferredMetricsTieBreakers>
+    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+</document>
